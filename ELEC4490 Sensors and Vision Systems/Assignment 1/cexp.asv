@@ -1,0 +1,4 @@
+%% Pt2 Function defined M-file
+
+Function MyFunction = cexp(a,b)
+values = exp(a+b*i)

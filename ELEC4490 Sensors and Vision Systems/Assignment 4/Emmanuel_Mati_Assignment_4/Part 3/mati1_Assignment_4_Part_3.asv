@@ -1,0 +1,108 @@
+%Emmanuel Mati
+%Summer 2020
+%Sensors and Vision Systems
+%Assignment 4.3
+
+%Clearing previous results
+close all
+clear all
+clc
+
+%%Part A
+
+%Retreiving our image and displaying it
+x = imread('picture.gif');
+figure
+imshow(x);
+title('Original Image');
+
+%Laplacian filter
+filter = fspecial('laplacian');
+lap = imfilter(x, filter);
+figure
+imshow(lap);
+title('Laplacian filtered image');
+
+%Prewitt filter
+filter = fspecial('prewitt');
+pre = imfilter(x, filter);
+figure
+imshow(pre);
+title('Prewitt filtered image');
+
+%Sobel filter
+filter = fspecial('sobel');
+sob = imfilter(x, filter);
+figure
+imshow(sob);
+title('Sobel filtered image');
+
+%Unsharp filter
+filter = fspecial('unsharp');
+unsharp = imfilter(x, filter);
+figure
+imshow(unsharp);
+title('Unsharp filtered image');
+
+%%Part B
+
+%Adding our Gaussian Noise to x
+x = imnoise(x, 'gaussian');
+figure
+imshow(x)
+title('Our new noisy image before filtering')
+
+%Laplacian filter
+filter = fspecial('laplacian');
+lap = imfilter(x, filter);
+figure
+imshow(lap);
+title('Laplacian filtered image');
+
+%Prewitt filter
+filter = fspecial('prewitt');
+pre = imfilter(x, filter);
+figure
+imshow(pre);
+title('Prewitt filtered image');
+
+%Sobel filter
+filter = fspecial('sobel');
+sob = imfilter(x, filter);
+figure
+imshow(sob);
+title('Sobel filtered image');
+
+%Unsharp filter
+filter = fspecial('unsharp');
+unsharp = imfilter(x, filter);
+figure
+imshow(unsharp);
+title('Unsharp filtered image');
+
+%%Part C
+
+%edge detection using roberts and sobel
+
+%Retreiving our rgb image and displaying it
+y = imread('pennies.jpg');
+figure
+imshow(y);
+title('Original RGB Image');
+
+y1 = edge(y(:, :, 1), 'roberts'); %Our Roberts edge
+y2 = edge(y(:, :, 1), 'sobel'); %Our Sobel edge
+y3 = edge(y(:, :, 2), 'roberts'); %Our Roberts edge
+y4 = edge(y(:, :, 2), 'sobel'); %Our Sobel edge
+y5 = edge(y(:, :, 3), 'roberts'); %Our Roberts edge
+y6 = edge(y(:, :, 3), 'sobel'); %Our Sobel edge
+
+%displaying Roberts edge
+figure
+imshow(y1)
+title('Roberts Red edges for RGB Red image');
+
+%displaying Sobels edge
+figure
+imshow(y2)
+title('Sobels edges for RGB image');

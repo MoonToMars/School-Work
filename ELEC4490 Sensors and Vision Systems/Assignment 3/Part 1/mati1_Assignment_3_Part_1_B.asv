@@ -1,0 +1,24 @@
+%Emmanuel Mati
+%Summer 2020
+%Sensors and Vision Systems
+%Assignment 3b
+
+%Clearing previous results
+close all
+clear all
+clc
+
+%getting our image and displaying it
+x = imread('eye.jpg');
+imshow(x);
+
+%converting our image into a double for manipulation
+x = double(x);
+
+a = max(x(:)%our lower bound
+
+x = (x-c)*((b-a)/(d-c)) + a
+
+%%Comparing with imaadjust
+figure
+imshow(imadjust(imread('eye.jpg'), [.1 .2], [0 1])) %we output the negative of the image

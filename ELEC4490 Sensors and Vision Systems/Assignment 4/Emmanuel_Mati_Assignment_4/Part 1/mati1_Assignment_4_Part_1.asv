@@ -1,0 +1,55 @@
+%Emmanuel Mati
+%Summer 2020
+%Sensors and Vision Systems
+%Assignment 4.1
+
+%Clearing previous results
+close all
+clear all
+clc
+
+%Retreiving our image and displaying it
+x = imread('picture.gif');
+figure
+imshow(x);
+title('Original Image');
+
+gcon = zeros(514, 514); %Our matrix that will hold our convoultion variables
+gcor = zeros(514, 514); %Our matrix that will hold our  correlation variables
+
+f = double(x); %Making our image a double so we can manipulate it
+
+w = [0.1 0.1 0.1 %our mask
+    0.2 0.1 0.1
+    0.1 0.1 0.5];
+
+wrot = rot90(w,2) %180 degree rotated mask
+
+for i = 1:512
+    for  = 1:512
+            gcon((i-1):(i + 1),(j-1):(j + 1)) = gcon(i-1:i+1,j) + f(n + i + 1, m + j + 1)*w(i, j) %conducting our convolution
+    end
+end
+
+
+
+
+
+
+
+
+
+
+%using for convolution conv2
+g = conv2(f,w);
+%Displaying our convoluted image
+figure
+imshow(uint8(g))
+title('Convolution using conv2')
+
+%using for correlation conv2
+g = conv2(f,wrot);
+%Displaying our correlation image
+figure
+imshow(uint8(g))
+title('Correlation using conv2')

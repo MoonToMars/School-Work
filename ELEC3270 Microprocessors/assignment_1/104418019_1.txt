@@ -1,0 +1,88 @@
+; This is the assignment 1 submission file.
+; Please name this file "SID_1" where SID is your Student Number.
+; Any line beginning with a ";" is a comment and will be ignored by
+;  the automated marking system.
+; Any other lines will be assumed to be your answers.
+; Each answer line begins with the question number followed by your
+;  answer(s) (there may be more than one part per question).
+; This file has all the necessary questions listed; you just need to
+;  add your answers.
+; Please don’t add or remove lines.
+; For example, the following line, if uncommented, would be the solution
+;  for Q1a if the question was to convert "65535" to 16 bit binary.
+; 1a 1111111111111111
+; You may also use "_"s to add spaces between long streams of 0's and 1's
+;  to help you count the number of digits, as in:
+; 1a 1111_1111_1111_1111
+1a 0101_0100_0010_0101
+1b 0011_0011_0010_1111
+1c 0011_0101_1001_1000
+1d 1001_0011_0101_1010
+1e 1100_0000_0101_0100
+1f 1101_0000_0010_0011
+2a 0000.1111_0100
+2b 0000.0110_0101
+2c 0000.0001_1111
+2d 1111.0001_0111
+2e 1111.0011_0001
+2f 1111.1100_1011
+3a 0101_1001.1111_1111
+3b 0100_1001.0001_0100
+3c 0001_0101.0110_1101
+3d 1011_0100.0100_1011
+3e 1100_1001.0110_0100
+3f 1100_0110.1010_1101
+4a 1C18
+4b 7AC8
+4c 1B1C
+4d BDC9
+4e 9F7A
+4f EA11
+5a 0.1F
+5b 0.73
+5c 0.6B
+5d F.71
+5e F.2D
+5f F.B5
+6a 20.F2
+6b 2E.E8
+6c 5D.7A
+6d A9.76
+6e E4.71
+6f E2.DA
+; For questions 7 to 9, you need to provide three parts for each solution.
+; Simply add spaces between the sign, mantissa, and exponent (in that
+;  order). For example, if the question asked you to do this for 1.0, your
+;  answer would be:
+; 7a 0 1.0 0
+7a 0 1.625 6
+7b 0 1.0234375 7
+7c 0 1.0859375 7
+7d 1 1.0546875 7
+7e 1 1.6875 6
+7f 1 1.40625 6
+8a 0 1.46875 -1
+8b 0 1.6875 -2
+8c 0 1.734375 -2
+8d 1 1.28125-3
+8e 1 1.03125 -3
+8f 1 1.375 -5
+9a 0 1.86700439453125 6
+9b 0 1.618927001953125 7
+9c 0 1.364013671875 4
+9d 1 1.145294189453125 7
+9e 1 1.090087890625 4
+9f 1 1.84918212890625 6
+; Question 10 and 11 only need a single result per part
+10a 0011_0111_0111_1101
+10b 0100_1111_0011_1001
+10c 0000_0101_1101_0011
+10d 0001_0010_1001_1001
+10e 0000_0001_0111_0001
+10f 0011_0110_0101_1001
+11a 377D
+11b 4F39
+11c 05D3
+11d 1299
+11e 0171
+11f 3659

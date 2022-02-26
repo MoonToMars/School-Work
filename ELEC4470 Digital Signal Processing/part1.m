@@ -1,0 +1,35 @@
+figure(1)
+subplot(2,1,1)
+stem(DiscreteTimeSequences.dt_unit_imp(0, -20, 20), 'filled')
+title("Unit Impulse")
+xlabel("n")
+ylabel("x(n)")
+
+subplot(2,1,2)
+stem(DiscreteTimeSequences.dt_unitstep(0, -20, 20), 'filled')
+title("Unit Step")
+xlabel("n")
+ylabel("x(n)")
+
+exportgraphics(gcf, "image-results/part1_1.png")
+
+figure(2)
+subplot(3,1,1)
+stem(DiscreteTimeSequences.rv_exp_seq(0.8, 0, 20), 'filled')
+title("Real-Value Exponential Sequence")
+xlabel("n")
+ylabel("x(n)")
+
+subplot(3,1,2)
+stem(DiscreteTimeSequences.cv_exp_seq(0.1, 0.8, 0, 20), 'filled')
+title("Complex-Value Exponential Sequence")
+xlabel("n")
+ylabel("x(n)")
+
+subplot(3,1,3)
+stem(DiscreteTimeSequences.sin_seq(0, 30), 'filled')
+title("Sinusoidal Sequence")
+xlabel("n")
+ylabel("x(n)")
+
+exportgraphics(gcf, "image-results/part1_2.png")
